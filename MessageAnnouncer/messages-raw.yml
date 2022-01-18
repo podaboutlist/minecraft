@@ -1,15 +1,53 @@
 command_rtp:
   - "[Tip] No hostile mobs spawn within the Homestead. If you'd like to fight some creeps, use /rtp!"
-command_buy:
-  - "[Tip] Having fun? Want more? Consider using /buy to purchase VIP Status for $4.99/month!"
-  - "[Tip] VIP Status unlocks even more features! (Full list available on the store page.)"
-  - "[Tip] Patreon supporters automatically get VIP Status with their subscription!"
 command_bed:
   - "[Tip] Teleport to the last bed you slept in with /bed!"
 command_warps:
   - "[Tip] Browse the list of public warp locations with /warps!"
+command_createwarp:
+  - "[Tip] Create your own public warps with /createwarp, then edit warps you've created in the /warps GUI!"
+  - "[Ad] Standard users can create up to 3 public warps, while VIPs can create up to 6!"
 command_namecolor:
   - "[Tip] Customize the color of your username in chat with the /namecolor GUI!"
+command_co_inspect:
+  - "[Tip] Want to see who touched your stuff? Use /co i to toggle inspection mode, then right click on blocks/chests/etc."
+command_pvp:
+  - "[Tip] Every player can enable/disable PvP combat with /pvp. When toggled off, other players can't attack you!"
+command_hat:
+  - "[Tip] Wear any item in your hand on your head with /hat!"
+command_help:
+  - "[Tip] You can see a full list of available commands with /help."
+command_msg:
+  - "[Tip] Send private messages to other players with /msg. Reply to your last message with /r!"
+command_mail:
+  - "[Tip] You can send mail to offline players with /mail send. Check your inbox with /mail!"
+command_sethome:
+  - "[Tip] Set homes (private teleport points) with /sethome <name>! TP back to them with /home <name>!"
+  - "[Ad] Players receive 2 homes + 1 bed. Upgrade to 5 homes + 1 bed by purchasing VIP with /buy!"
+command_blocklocker_setline:
+  - "[Tip] Allow other players to access your private chests with /bl <2/3/4> <username>. '<2/3/4>' specifies which line of the sign to modify."
+command_sit:
+  - "[Tip] Sit down with /sit!"
+  - "[Ad] In addition to /sit, VIPs can /lay, /crawl, /bellyflop, and /spin."
+command_sit_toggle:
+  - "[Tip] If you don't want to sit down automatically, use /sit toggle to disable the feature."
+command_mcmmo_mcrank:
+  - "[Tip] Check your position on the McMMO skill leaderboards with /mcrank."
+command_mcmmo_mctop:
+  - "[Tip] See a list of the server's highest level McMMO players with /mctop!"
+command_mcmmo_mcability:
+  - "[Tip] The /mcability command toggles the automatic activation of McMMO abilities."
+command_mcmmo_mcscoreboard:
+  - "[Tip] Use McMMO commands like /fishing, /mining, etc. in combination with /mcscoreboard keep to pin XP and level info on your screen."
+  - "[Tip] Once you're done, use /mcscoreboard clear to remove the panel pinned on your screen."
+command_showitem_show:
+  - "[Tip] Show off the item in your hand to nearby players with /showitem (or /show)!"
+  - "[Ad] By default, /showitem will display to players within 64 blocks of you. Upgrade VIP to unlock /show -world and /show -all!"
+command_showitem_show_player:
+  - "[Tip] Show items to specific players with /showitem <username>."
+
+
+
 info_click_tip_commands:
   - "[Tip] You can click on the orange commands in these tips to try them yourself!"
 info_homestead:
@@ -28,13 +66,17 @@ info_blocklocker_protection_area:
   - "[Tip] One sign is enough to lock multiple chests if the chests are next to each other."
 info_blocklocker_protect_iron:
   - "[Tip] You can protect iron doors and trapdoors with signs just like chests."
+info_blocklocker_extra_users:
+  - "[Tip] Right-click a protected chest with additional signs to authorize more than 3 users!"
+info_blocklocker_options:
+  - "[Tip] Extend access to locked chests with [Redstone] to allow hopper access and [Everyone] to unlock the container for everyone!"
+info_blocklocker_door_timer:
+  - "[Tip] Set protected doors to auto-close after 1-9 seconds by adding [Timer:<1-9>] to the protection sign."
 info_emojichat:
   - "[Tip] Most default Discord :emoji: are available in chat! Try :tada: or :+1:!"
-  - "[Tip] Users with VIP Status can use emojis on signs and in commands. Check /buy for more info."
+  - "[Ad] Users with VIP can use emojis on signs and in commands. Check /buy for more info."
 info_hiddenlorax:
   - "[Tip] A hidden Lorax replants saplings that drop when you knock down trees..."
-info_marriage:
-  - "[Tip] All users with VIP Rank are ordained ministers who can use /marry to wed two users in holy matrimony."
 info_mcmmo_concept:
   - "[Tip] The levels you gain while playing on the server unlock unique abilities. Google 'McMMO' for more info!"
 info_mcmmo_doubledrops:
@@ -50,5 +92,44 @@ info_timecontrol_percent:
 info_viabackwards:
   - "[Tip] This server supports connections from older versions of the Minecraft client, all the way back to 1.8.x."
 info_villagermodification_price_limits:
-  - "[Tip] Villager trades for certain items have their prices modified in order to prevent economic inflation."
-  - "[Tip] These prices are slightly less than those found at Solutio's shop at Spawn."
+  - "[Tip] Villager trades for certain items have their prices modified in order to prevent inflation of the item economy."
+  - "[Tip] These prices are slightly cheaper than those found at Solutio's shop at Spawn."
+info_shopkeepers_wtc:
+  - "[Tip] The World Trade Center is the only location on the server where you can spawn a shopkeeper to sell your items."
+  - "[Tip] Warp there with /warp WTC and found your shop today!"
+info_shopkeepers_kit:
+  - "[Tip] Redeem 3 shopkeeper spawn eggs with /kit shopkeepers and found your shop in the World Trade Center today!"
+info_showitem_placeholders:
+  - "[Tip] Use the placeholders %item% and %itemoffhand% in messages to embed the item in your hand/offhand!"
+
+
+
+ad_buy:
+  - "-----------------------------------------------------"
+  - "[Ad] Having fun? Want more? Consider using /buy to purchase VIP for $4.99/month!"
+  - "[Ad] VIP unlocks even more features! (Full list available on the store page.)"
+  - "[Tip] Patreon supporters automatically get VIP with their subscription!"
+  - "-----------------------------------------------------"
+ad_blocklocker_vip_group:
+  - "[Ad] Users with VIP can add [VIP] to their locked chest signs to allow access for other VIPs!"
+  - "[Ad] Open the webstore with /buy for more info."
+ad_essentials_crafting_commands:
+  - "[Ad] VIP grants access to commands like /craftingtable, /anvil, /loom, etc. that open those crafting GUIs wherever you are!"
+  - "[Ad] Open the webstore with /buy for more info."
+ad_chat_format:
+  - "[Ad] In addition to color codes, format codes for bold (&l), italic (&o), and underlined (&n) text are available for VIPs."
+  - "[Ad] Open the webstore with /buy for more info."
+ad_chat_rgb:
+  - "[Ad] Extend the default color codes with RGB hex codes (i.e. &#AC13F1) by upgrading to VIP!"
+  - "[Ad] Open the webstore with /buy for more info."
+ad_rgb_nicknames:
+  - "[Ad] Unlock custom username colors when you upgrade to VIP! All hexadecimal color codes are supported."
+ad_command_condense:
+  - "[Ad] VIPs can convert all the coal, redstone dust, etc. in their inventories down to blocks with /condense!"
+ad_marriage:
+  - "[Ad] All VIP users are ordained ministers who can use /marry to wed two users in holy matrimony."
+ad_shopkeeper_limit:
+  - "[Ad] Purchasing VIP with /buy doubles your World Trade Center shop limit from 3 to 6!"
+ad_showitem_inventories:
+  - "[Ad] In addition to /showitem, VIPs can use /showinv and /showender to show off the contents of their inventories/Ender Chests!"
+  - "[Tip] This upgrade also unlocks the %inv% and %ender% chat placeholders, which function the same as %item%."
