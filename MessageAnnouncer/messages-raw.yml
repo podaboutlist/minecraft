@@ -1,0 +1,54 @@
+command_rtp:
+  - "[Tip] No hostile mobs spawn within the Homestead. If you'd like to fight some creeps, use /rtp!"
+command_buy:
+  - "[Tip] Having fun? Want more? Consider using /buy to purchase VIP Status for $4.99/month!"
+  - "[Tip] VIP Status unlocks even more features! (Full list available on the store page.)"
+  - "[Tip] Patreon supporters automatically get VIP Status with their subscription!"
+command_bed:
+  - "[Tip] Teleport to the last bed you slept in with /bed!"
+command_warps:
+  - "[Tip] Browse the list of public warp locations with /warps!"
+command_namecolor:
+  - "[Tip] Customize the color of your username in chat with the /namecolor GUI!"
+info_click_tip_commands:
+  - "[Tip] You can click on the orange commands in these tips to try them yourself!"
+info_homestead:
+  - "[Tip] The Homestead is a peaceful area around Spawn intended to house a city built by players on the server."
+info_nether_roof_limit:
+  - "[Tip] Watch out! There is a lethal void above the bedrock roof of the Nether. Don't go up there!"
+info_bugs_suggestions:
+  - "[Tip] Send your questions, comments, and concerns to the #mc-bugs-suggestions channel on Discord."
+info_reports:
+  - "[Tip] Report issues like griefing, use of slurs, etc. by opening a ticket in the #mc-reports Discord channel."
+info_shooting_stars:
+  - "[Tip] Shooting stars in the night sky sometimes crash to Earth, leaving a diamond and some XP where they fell..."
+info_blocklocker_right_click:
+  - "[Tip] Right-clicking on a chest, furnace, hopper, etc. with a sign will lock it!"
+info_blocklocker_protection_area:
+  - "[Tip] One sign is enough to lock multiple chests if the chests are next to each other."
+info_blocklocker_protect_iron:
+  - "[Tip] You can protect iron doors and trapdoors with signs just like chests."
+info_emojichat:
+  - "[Tip] Most default Discord :emoji: are available in chat! Try :tada: or :+1:!"
+  - "[Tip] Users with VIP Status can use emojis on signs and in commands. Check /buy for more info."
+info_hiddenlorax:
+  - "[Tip] A hidden Lorax replants saplings that drop when you knock down trees..."
+info_marriage:
+  - "[Tip] All users with VIP Rank are ordained ministers who can use /marry to wed two users in holy matrimony."
+info_mcmmo_concept:
+  - "[Tip] The levels you gain while playing on the server unlock unique abilities. Google 'McMMO' for more info!"
+info_mcmmo_doubledrops:
+  - "[Tip] As your McMMO levels increase, you will start getting double drops of most items!"
+info_mcmmo_fishing_mending:
+  - "[Tip] Once your McMMO fishing level reaches 50, you will unlock a chance to find an enchanted Mending book while fishing!"
+info_moremeat:
+  - "[Tip] One of our custom plugins is MoreMeat, which adds food drops for various animals."
+  - "[Tip] MoreMeat is open source! If you want to contribute, check it out here: https://s.ralph.sh/mmg"
+info_timecontrol_percent:
+  - "[Tip] Only 30% of players need to sleep in order to rapidly advance night to day."
+  - "[Tip] Nigt isn't instantly skipped, instead it is sped up to only last ~30 seconds."
+info_viabackwards:
+  - "[Tip] This server supports connections from older versions of the Minecraft client, all the way back to 1.8.x."
+info_villagermodification_price_limits:
+  - "[Tip] Villager trades for certain items have their prices modified in order to prevent economic inflation."
+  - "[Tip] These prices are slightly less than those found at Solutio's shop at Spawn."
