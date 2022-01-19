@@ -1,11 +1,11 @@
 command_rtp:
-  - "[Tip] No hostile mobs spawn within the Homestead. If you'd like to fight some creeps, use /rtp!"
+  - "[Tip] No hostile mobs spawn within the Homestead. If you want to fight some creeps, use /rtp!"
 command_bed:
   - "[Tip] Teleport to the last bed you slept in with /bed!"
 command_warps:
   - "[Tip] Browse the list of public warp locations with /warps!"
 command_createwarp:
-  - "[Tip] Create your own public warps with /createwarp, then edit warps you've created in the /warps GUI!"
+  - "[Tip] Create your own public warps with /createwarp, then edit warps you've created with the /warps GUI!"
   - "[Ad] Standard users can create up to 3 public warps, while VIPs can create up to 6!"
 command_namecolor:
   - "[Tip] Customize the color of your username in chat with the /namecolor GUI!"
