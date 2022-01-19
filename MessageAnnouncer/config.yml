@@ -1,0 +1,177 @@
+# MessageAnnouncer v1.12.3 Main configuration
+
+announcer_enabled: true
+announcer_random: true
+announce_interval: 900
+sound:
+  enabled: true
+  sound_name: UI_TOAST_IN
+  volume: 8
+  pitch: 1
+interval_announcement_list:
+  - command_rtp
+  - command_bed
+  - command_warps
+  - command_createwarp
+  - command_namecolor
+  - command_co_inspect
+  - command_pvp
+  - command_hat
+  - command_help
+  - command_msg
+  - command_mail
+  - command_sethome
+  - command_blocklocker_setline
+  - command_sit
+  - command_sit_toggle
+  - command_mcmmo_mcrank
+  - command_mcmmo_mctop
+  - command_mcmmo_mcability
+  - command_mcmmo_mcscoreboard
+  - command_showitem_show
+  - command_showitem_show_player
+  - info_click_tip_commands
+  - info_homestead
+  - info_nether_roof_limit
+  - info_bugs_suggestions
+  - info_reports
+  - info_shooting_stars
+  - info_blocklocker_right_click
+  - info_blocklocker_protection_area
+  - info_blocklocker_protect_iron
+  - info_blocklocker_extra_users
+  - info_blocklocker_options
+  - info_blocklocker_door_timer
+  - info_emojichat
+  - info_hiddenlorax
+  - info_mcmmo_concept
+  - info_mcmmo_doubledrops
+  - info_mcmmo_fishing_mending
+  - info_moremeat
+  - info_timecontrol_percent
+  - info_viabackwards
+  - info_villagermodification_price_limits
+  - info_shopkeepers_wtc
+  - info_shopkeepers_kit
+  - info_showitem_placeholders
+  - ad_buy
+  - ad_blocklocker_vip_group
+  - ad_essentials_crafting_commands
+  - ad_chat_format
+  - ad_chat_rgb
+  - ad_rgb_nicknames
+  - ad_command_condense
+  - ad_marriage
+  - ad_shopkeeper_limit
+  - ad_showitem_inventories
+announcements:
+  command_rtp:
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"},{"text":" No hostile mobs spawn within the ","color":"#FBF1C7"},{"text":"Homestead","color":"#D3869B"},{"text":". If you want to fight some creeps, use ","color":"#FBF1C7"},{"text":"/rtp","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/rtp"},"hoverEvent":{"action":"show_text","contents":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!","color":"#FBF1C7"}]'
+  command_bed:
+    - '[{"text":"[","bold":true},{"text":"Tip"},{"text":"]","bold":true},{"text":" Teleport to the last bed you slept in with "},{"text":"/bed","clickEvent":{"action":"suggest_command","value":"/bed"},"hoverEvent":{"action":"show_text","value":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!"}]'
+  command_warps:
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"},{"text":" Browse the list of public warp locations with ","color":"#FBF1C7"},{"text":"/warps","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!","color":"#FBF1C7"}]'
+  command_createwarp:
+    - ''
+  command_namecolor:
+    - ''
+  command_co_inspect:
+    - ''
+  command_pvp:
+    - ''
+  command_hat:
+    - ''
+  command_help:
+    - ''
+  command_msg:
+    - ''
+  command_mail:
+    - ''
+  command_sethome:
+    - ''
+  command_blocklocker_setline:
+    - ''
+  command_sit:
+    - ''
+  command_sit_toggle:
+    - ''
+  command_mcmmo_mcrank:
+    - ''
+  command_mcmmo_mctop:
+    - ''
+  command_mcmmo_mcability:
+    - ''
+  command_mcmmo_mcscoreboard:
+    - ''
+  command_showitem_show:
+    - ''
+  command_showitem_show_player:
+    - ''
+  info_click_tip_commands:
+    - ''
+  info_homestead:
+    - ''
+  info_nether_roof_limit:
+    - ''
+  info_bugs_suggestions:
+    - ''
+  info_reports:
+    - ''
+  info_shooting_stars:
+    - ''
+  info_blocklocker_right_click:
+    - ''
+  info_blocklocker_protection_area:
+    - ''
+  info_blocklocker_protect_iron:
+    - ''
+  info_blocklocker_extra_users:
+    - ''
+  info_blocklocker_options:
+    - ''
+  info_blocklocker_door_timer:
+    - ''
+  info_emojichat:
+    - ''
+  info_hiddenlorax:
+    - ''
+  info_mcmmo_concept:
+    - ''
+  info_mcmmo_doubledrops:
+    - ''
+  info_mcmmo_fishing_mending:
+    - ''
+  info_moremeat:
+    - ''
+  info_timecontrol_percent:
+    - ''
+  info_viabackwards:
+    - ''
+  info_villagermodification_price_limits:
+    - ''
+  info_shopkeepers_wtc:
+    - ''
+  info_shopkeepers_kit:
+    - ''
+  info_showitem_placeholders:
+    - ''
+  ad_buy:
+    - ''
+  ad_blocklocker_vip_group:
+    - ''
+  ad_essentials_crafting_commands:
+    - ''
+  ad_chat_format:
+    - ''
+  ad_chat_rgb:
+    - ''
+  ad_rgb_nicknames:
+    - ''
+  ad_command_condense:
+    - ''
+  ad_marriage:
+    - ''
+  ad_shopkeeper_limit:
+    - ''
+  ad_showitem_inventories:
+    - ''
