@@ -66,95 +66,103 @@ interval_announcement_list:
   - ad_showitem_inventories
 announcements:
   command_rtp:
-    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"},{"text":" No hostile mobs spawn within the ","color":"#FBF1C7"},{"text":"Homestead","color":"#D3869B"},{"text":". If you want to fight some creeps, use ","color":"#FBF1C7"},{"text":"/rtp","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/rtp"},"hoverEvent":{"action":"show_text","contents":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!","color":"#FBF1C7"}]'
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"No hostile mobs spawn within the ","color":"#FBF1C7"},{"text":"Homestead","color":"#D3869B"},{"text":". If you want to fight some creeps, use ","color":"#FBF1C7"},{"text":"/rtp","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/rtp"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_bed:
-    - '[{"text":"[","bold":true},{"text":"Tip"},{"text":"]","bold":true},{"text":" Teleport to the last bed you slept in with "},{"text":"/bed","clickEvent":{"action":"suggest_command","value":"/bed"},"hoverEvent":{"action":"show_text","value":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!"}]'
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Teleport to the last bed you slept in with ","color":"#FBF1C7"},{"text":"/bed","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/bed"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_warps:
-    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"},{"text":" Browse the list of public warp locations with ","color":"#FBF1C7"},{"text":"/warps","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":{"text":"Click to run this command!","italic":"true","color":"#FE8019"}}},{"text":"!","color":"#FBF1C7"}]'
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Browse the list of public warp locations with ","color":"#FBF1C7"},{"text":"/warps","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_createwarp:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Create your own public warps with ","color":"#FBF1C7"},{"text":"/createwarp <warp name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/createwarp <warp name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":", then edit warps you''ve created with the ","color":"#FBF1C7"},{"text":"/warps","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" GUI!","color":"#FBF1C7"}]'
+    - ''  #TODO: ADD AD
   command_namecolor:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Customize the color of your username in chat with the ","color":"#FBF1C7"},{"text":"/namecolor","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/namecolor"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" GUI!","color":"#FBF1C7"}]'
   command_co_inspect:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Want to see who touched your stuff? Use ","color":"#FBF1C7"},{"text":"/co i","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/co i"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" to toggle inspection mode, then right click on blocks/chests/etc.","color":"#FBF1C7"}]'
   command_pvp:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Every player can enable/disable PvP combat with ","color":"#FBF1C7"},{"text":"/pvp","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/co i"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". When toggled off, other players can''t attack you!","color":"#FBF1C7"}]'
   command_hat:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Wear any item in your hand on your head with ","color":"#FBF1C7"},{"text":"/hat","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/hat"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_help:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"You can see a full list of available commands with ","color":"#FBF1C7"},{"text":"/help","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/help"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":".","color":"#FBF1C7"}]'
   command_msg:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Send private messages to other players with ","color":"#FBF1C7"},{"text":"/msg <user> <text>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/msg <user> <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". Reply to your last message with ","color":"#FBF1C7"},{"text":"/r <text>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/r <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_mail:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"You can send mail to offline players with ","color":"#FBF1C7"},{"text":"/mail send <user> <text>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail send <user> <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". Check your inbox with ","color":"#FBF1C7"},{"text":"/mail","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_sethome:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Set homes (private teleport points) with ","color":"#FBF1C7"},{"text":"/sethome <name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sethome <name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"! TP back to them with ","color":"#FBF1C7"},{"text":"/home <name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/home <name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
+    - ''  #TODO: ADD AD
   command_blocklocker_setline:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Allow other players to access your private chests with ","color":"#FBF1C7"},{"text":"/bl <2/3/4> <user>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail send <user> <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". (''","color":"#FBF1C7"},{"text":"<2/3/4>","color":"#FABD2F"},{"text":"'' specifies which line of the sign to modify.)","color":"#FBF1C7"}]'
   command_sit:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Sit down with ","color":"#FBF1C7"},{"text":"/sit","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sit"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
+    - ''  #TODO: ADD AD
   command_sit_toggle:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"If you don''t want to sit down automatically, use ","color":"#FBF1C7"},{"text":"/sit toggle","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sit toggle"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" to disable the feature.","color":"#FBF1C7"}]'
   command_mcmmo_mcrank:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Check your position on the McMMO skill leaderboards with ","color":"#FBF1C7"},{"text":"/mcrank","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mcrank"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":".","color":"#FBF1C7"}]'
   command_mcmmo_mctop:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"See a list of the server''s highest level McMMO players with ","color":"#FBF1C7"},{"text":"/mctop","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mctop"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_mcmmo_mcability:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"The ","color":"#FBF1C7"},{"text":"/mcability","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mctop"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" command toggles the ","color":"#FBF1C7"},{"text":"automatic activation","color":"#FABD2F"},{"text":" of McMMO abilities.","color":"#FBF1C7"}]'
   command_mcmmo_mcscoreboard:
     - ''
+    - ''
   command_showitem_show:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Show off the item in your hand to nearby players with ","color":"#FBF1C7"},{"text":"/showitem","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/showitem"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" (or ","color":"#FBF1C7"},{"text":"/show","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/show"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":")!","color":"#FBF1C7"}]'
+    - ''  #TODO: ADD AD
   command_showitem_show_player:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Show items to specific players with ","color":"#FBF1C7"},{"text":"/showitem <user>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/showitem <user>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":".","color":"#FBF1C7"}]'
   info_click_tip_commands:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"You can click on the ","color":"#FBF1C7"},{"text":"orange commands","color":"#FABD2F"},{"text":" in these tips to try them yourself!","color":"#FBF1C7"}]'
   info_homestead:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"The ","color":"#FBF1C7"},{"text":"Homestead","color":"#FABD2F"},{"text":" is a peaceful area around Spawn intended to house a city built by players on the server.","color":"#FBF1C7"}]'
   info_nether_roof_limit:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Watch out! There is a ","color":"#FBF1C7"},{"text":"lethal void","color":"#FB4934"},{"text":" above the bedrock roof of the Nether. ","color":"#FBF1C7"},{"text":"Don''t go up there!","color":"#FB4934"}]'
   info_bugs_suggestions:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Send your questions, comments, and concerns to the ","color":"#FBF1C7"},{"text":"#mc-bugs-suggestions","color":"#FABD2F","clickEvent":{"action":"open_url","value":"https://discord.com/channels/643644919751376899/928743514609684500"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to open this link!","italic":true,"color":"#FABD2F"}]}},{"text":" channel on Discord.","color":"#FBF1C7"}]'
   info_reports:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Report issues like ","color":"#FBF1C7"},{"text":"griefing","color":"#FB4934"},{"text":", ","color":"#FBF1C7"},{"text":"use of slurs","color":"#FB4934"},{"text":", ","color":"#FBF1C7"},{"text":"etc.","color":"#FB4934"},{"text":" by opening a ticket in the ","color":"#FBF1C7"},{"text":"#mc-reports","color":"#FABD2F","clickEvent":{"action":"open_url","value":"https://discord.com/channels/643644919751376899/932535408783392808"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to open this link!","italic":true,"color":"#FABD2F"}]}},{"text":" Discord channel.","color":"#FBF1C7"}]'
   info_shooting_stars:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Shooting stars in the night sky sometimes ","color":"#FBF1C7"},{"text":"crash to Earth","color":"#FABD2F"},{"text":", leaving a ","color":"#FBF1C7"},{"text":"diamond","color":"#FABD2F"},{"text":" and some ","color":"#FBF1C7"},{"text":"XP","color":"#FABD2F"},{"text":" where they fell...","color":"#FBF1C7"}]'
   info_blocklocker_right_click:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Right-clicking on a ","color":"#FBF1C7"},{"text":"chest","color":"#FABD2F"},{"text":", ","color":"#FBF1C7"},{"text":"furnace","color":"#FABD2F"},{"text":", ","color":"#FBF1C7"},{"text":"hopper","color":"#FABD2F"},{"text":", ","color":"#FBF1C7"},{"text":"etc.","color":"#FABD2F"},{"text":" with a ","color":"#FBF1C7"},{"text":"sign","color":"#FABD2F"},{"text":" will lock the container!","color":"#FBF1C7"}]'
   info_blocklocker_protection_area:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"One sign is enough to lock ","color":"#FBF1C7"},{"text":"multiple chests","color":"#FABD2F"},{"text":" if the chests are ","color":"#FBF1C7"},{"text":"touching one another","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
   info_blocklocker_protect_iron:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"You can protect ","color":"#FBF1C7"},{"text":"iron doors","color":"#FABD2F"},{"text":" and ","color":"#FBF1C7"},{"text":"iron trapdoors","color":"#FABD2F"},{"text":" with ","color":"#FBF1C7"},{"text":"signs","color":"#FABD2F"},{"text":", just like ","color":"#FBF1C7"},{"text":"chests","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
   info_blocklocker_extra_users:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Right-click an ","color":"#FBF1C7"},{"text":"empty side","color":"#FABD2F"},{"text":" of a ","color":"#FBF1C7"},{"text":"protected chest","color":"#FABD2F"},{"text":" with ","color":"#FBF1C7"},{"text":"additional signs","color":"#FABD2F"},{"text":" to ","color":"#FBF1C7"},{"text":"authorize more than 3 users","color":"#FABD2F"},{"text":"!","color":"#FBF1C7"}]'
   info_blocklocker_options:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Extend access to locked chests with ","color":"#FBF1C7"},{"text":"[Redstone]","color":"#FABD2F"},{"text":" to allow hopper access and ","color":"#FBF1C7"},{"text":"[Everyone]","color":"#FABD2F"},{"text":" to unlock the container for everyone!","color":"#FBF1C7"}]'
   info_blocklocker_door_timer:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Set protected doors to ","color":"#FBF1C7"},{"text":"auto-close","color":"#FABD2F"},{"text":" after 1-9 seconds by adding ","color":"#FBF1C7"},{"text":"[Timer:<1-9>]","color":"#FABD2F"},{"text":" to the protection sign.","color":"#FBF1C7"}]'
   info_emojichat:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Most default Discord ","color":"#FBF1C7"},{"text":":emoji:","color":"#FABD2F"},{"text":" are available in chat! Try ","color":"#FBF1C7"},{"text":":tada:","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":":tada:"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this emoji!","italic":true,"color":"#FABD2F"}]}},{"text":" or ","color":"#FBF1C7"},{"text":":thumbsup:","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":":thumbsup:"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this emoji!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
+    - ''  #TODO: ADD AD
   info_hiddenlorax:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"A hidden ","color":"#FBF1C7"},{"text":"Lorax","color":"#FABD2F"},{"text":" will automatically replant the ","color":"#FBF1C7"},{"text":"saplings","color":"#FABD2F"},{"text":" that drop when you ","color":"#FBF1C7"},{"text":"chop down trees","color":"#FABD2F"},{"text":"...","color":"#FBF1C7"}]'
   info_mcmmo_concept:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"The levels you gain while playing on the server unlock ","color":"#FBF1C7"},{"text":"unique abilities","color":"#FABD2F"},{"text":". Google ''","color":"#FBF1C7"},{"text":"McMMO","color":"#FABD2F","clickEvent":{"action":"open_url","value":"https://mcmmo.org/wiki/Main_Page"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to open this link!","italic":true,"color":"#FABD2F"}]}},{"text":"'' for more info!","color":"#FBF1C7"}]'
   info_mcmmo_doubledrops:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":" As your McMMO mining level increases, you will unlock ","color":"#FBF1C7"},{"text":"passive double drops","color":"#FABD2F"},{"text":" when mining!","color":"#FBF1C7"}]'
   info_mcmmo_fishing_mending:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":" As your McMMO fishing level increases, so does your chance to find an ","color":"#FBF1C7"},{"text":"enchanted Book of Mending","color":"#FABD2F"},{"text":" while fishing!","color":"#FBF1C7"}]'
   info_moremeat:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"One of our ","color":"#FBF1C7"},{"text":"custom plugins","color":"#FABD2F"},{"text":" is ","color":"#FBF1C7"},{"text":"MoreMeat","color":"#FABD2F"},{"text":", which adds ","color":"#FBF1C7"},{"text":"new food drops","color":"#FABD2F"},{"text":" to ","color":"#FBF1C7"},{"text":"various animals","color":"#FABD2F"},{"text":"!","color":"#FBF1C7"}]'
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"MoreMeat is open source! MoreMeat is open source! If you want to contribute, check it out here: ","color":"#FBF1C7"},{"text":"https://s.ralph.sh/mmg","color":"#FABD2F","clickEvent":{"action":"open_url","value":"https://s.ralph.sh/mmg"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to open link!","italic":true,"color":"#FABD2F"}]}},{"text":".","color":"#FBF1C7"}]'
   info_timecontrol_percent:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Only ","color":"#FBF1C7"},{"text":"30% of players","color":"#FABD2F"},{"text":" need to sleep in order to ","color":"#FBF1C7"},{"text":"rapidly skip nighttime","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
   info_viabackwards:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"This server supports connections from ","color":"#FBF1C7"},{"text":"older versions of the Minecraft client","color":"#FABD2F"},{"text":", all the way back to ","color":"#FBF1C7"},{"text":"1.8.x","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
   info_villagermodification_price_limits:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Villager trades for ","color":"#FBF1C7"},{"text":"certain items","color":"#FABD2F"},{"text":" have their ","color":"#FBF1C7"},{"text":"prices modified","color":"#FABD2F"},{"text":", in order to prevent ","color":"#FBF1C7"},{"text":"inflation of the item economy","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
   info_shopkeepers_wtc:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"The ","color":"#FBF1C7"},{"text":"World Trade Center","color":"#FABD2F"},{"text":" is the only location on the server where you can ","color":"#FBF1C7"},{"text":"spawn a Shopkeeper","color":"#FABD2F"},{"text":" and ","color":"#FBF1C7"},{"text":"sell your items","color":"#FABD2F"},{"text":".","color":"#FBF1C7"}]'
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Warp there with ","color":"#FBF1C7"},{"text":"/warp WTC","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/warp WTC"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" and found your shop today!","color":"#FBF1C7"}]'
   info_shopkeepers_kit:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Redeem ","color":"#FBF1C7"},{"text":"3 Shopkeeper spawn eggs","color":"#FABD2F"},{"text":" with ","color":"#FBF1C7"},{"text":"/kit shopkeepers","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/kit shopkeepers"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" and found your shop in the World Trade Center today!","color":"#FBF1C7"}]'
   info_showitem_placeholders:
-    - ''
+    - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use the placeholders ","color":"#FBF1C7"},{"text":"%item%","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"%item%"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this placeholder!","italic":true,"color":"#FABD2F"}]}},{"text":" and ","color":"#FBF1C7"},{"text":"%itemoffhand%","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"%itemoffhand%"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this placeholder!","italic":true,"color":"#FABD2F"}]}},{"text":" in chat messages to ","color":"#FBF1C7"},{"text":"show the item","color":"#FABD2F"},{"text":" in your hand/offhand!","color":"#FBF1C7"}]'
   ad_buy:
     - ''
   ad_blocklocker_vip_group:
