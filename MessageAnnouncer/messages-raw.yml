@@ -6,7 +6,7 @@ command_warps:
   - "[Tip] Browse the list of public warp locations with /warps!"
 command_createwarp:
   - "[Tip] Create your own public warps with /createwarp <warp name>, then edit warps you've created with the /warps GUI!"
-  - "[Ad] Standard users can create up to 3 public warps, while VIPs can create up to 6!"
+  - "[Ad] All players can create up to 3 public warps, but VIPs can create up to 6!"
 command_namecolor:
   - "[Tip] Customize the color of your username in chat with the /namecolor GUI!"
 command_co_inspect:
@@ -23,12 +23,12 @@ command_mail:
   - "[Tip] You can send mail to offline players with /mail send <user> <text>. Check your inbox with /mail!"
 command_sethome:
   - "[Tip] Set homes (private teleport points) with /sethome <name>! TP back to them with /home <name>!"
-  - "[Ad] Players receive 2 homes + 1 bed. Upgrade to 5 homes + 1 bed by purchasing VIP with /buy!"
+  - "[Ad] By default, you can set 2 homes + 1 bed. Unlock 5 homes + 1 bed by purchasing VIP with /buy!"
 command_blocklocker_setline:
   - "[Tip] Allow other players to access your private chests with /bl <2/3/4> <user>. ('<2/3/4>' specifies which line of the sign to modify.)"
 command_sit:
   - "[Tip] Sit down with /sit!"
-  - "[Ad] In addition to /sit, VIPs can /lay, /crawl, /bellyflop, and /spin."
+  - "[Ad] In addition to /sit, VIPs can /lay, /crawl, /plank, and /spin."
 command_sit_toggle:
   - "[Tip] If you don't want to sit down automatically, use /sit toggle to disable the feature."
 command_mcmmo_mcrank:
@@ -42,11 +42,9 @@ command_mcmmo_mcscoreboard:
   - "[Tip] Once you're done, use /mcscoreboard clear to remove the panel pinned on your screen."
 command_showitem_show:
   - "[Tip] Show off the item in your hand to nearby players with /showitem (or /show)!"
-  - "[Ad] By default, /showitem will display to players within 64 blocks of you. Upgrade VIP to unlock /show -world and /show -all!"
+  - "[Ad] By default, /showitem will only display to nearby players. Upgrade VIP to unlock /show -world and /show -all!"
 command_showitem_show_player:
   - "[Tip] Show items to specific players with /showitem <user>."
-
-
 
 info_click_tip_commands:
   - "[Tip] You can click on the orange commands in these tips to try them yourself!"
@@ -74,7 +72,7 @@ info_blocklocker_door_timer:
   - "[Tip] Set protected doors to auto-close after 1-9 seconds by adding [Timer:<1-9>] to the protection sign."
 info_emojichat:
   - "[Tip] Most default Discord :emoji: are available in chat! Try :tada: or :thumbsup:!"
-  - "[Ad] Users with VIP can use emojis on signs and in commands. Check /buy for more info."
+  - "[Ad] VIPs can use emojis on signs and in commands. Check /buy for more info."
 info_hiddenlorax:
   - "[Tip] A hidden Lorax will automatically replant the saplings that drop when you chop down trees..."
 info_mcmmo_concept:
@@ -101,34 +99,39 @@ info_shopkeepers_kit:
 info_showitem_placeholders:
   - "[Tip] Use the placeholders %item% and %itemoffhand% in chat messages to show the item in your hand/offhand!"
 
-
-
 ad_buy:
   - "-----------------------------------------------------"
-  - "[Ad] Having fun? Want more? Consider using /buy to purchase VIP for $4.99/month!"
-  - "[Ad] VIP unlocks even more features! (Full list available on the store page.)"
-  - "[Tip] Patreon supporters automatically get VIP with their subscription!"
+  - "[Ad] Having fun? Want to support the server? Consider using /buy to purchase VIP for $4.99/month!"
+  - "[Ad] VIP unlocks even more features! The full list available on the store page."
+  - "[Tip] Patreon supporters automatically get VIP with their subscriptions!"
   - "-----------------------------------------------------"
 ad_blocklocker_vip_group:
-  - "[Ad] Users with VIP can add [VIP] to their locked chest signs to allow access for other VIPs!"
-  - "[Ad] Open the webstore with /buy for more info."
+  - "[Ad] Users with VIP can add [VIP] to their locked chest signs in order to give other VIPs access!"
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_essentials_crafting_commands:
-  - "[Ad] VIP grants access to commands like /craftingtable, /anvil, /loom, etc. that open those crafting GUIs wherever you are!"
-  - "[Ad] Open the webstore with /buy for more info."
+  - "[Ad] VIP grants access to commands like /craftingtable, /anvil, /loom, etc. to open crafting GUIs at any time!"
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_chat_format:
   - "[Ad] In addition to color codes, format codes for bold (&l), italic (&o), and underlined (&n) text are available for VIPs."
-  - "[Ad] Open the webstore with /buy for more info."
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_chat_rgb:
   - "[Ad] Extend the default color codes with RGB hex codes (i.e. &#AC13F1) by upgrading to VIP!"
-  - "[Ad] Open the webstore with /buy for more info."
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_rgb_nicknames:
   - "[Ad] Unlock custom username colors when you upgrade to VIP! All hexadecimal color codes are supported."
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_command_condense:
-  - "[Ad] VIPs can convert all the coal, redstone dust, etc. in their inventories down to blocks with /condense!"
+  - "[Ad] As a VIP, convert all the coal, redstone dust, etc. in your inventory into blocks with /condense!"
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_marriage:
-  - "[Ad] All VIP users are ordained ministers who can use /marry to wed two users in holy matrimony."
+  - "[Ad] All VIPs are ordained ministers who can /marry two users in holy matrimony."
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_shopkeeper_limit:
-  - "[Ad] Purchasing VIP with /buy doubles your World Trade Center shop limit from 3 to 6!"
+  - "[Ad] Purchasing VIP doubles your World Trade Center shop limit from 3 to 6!"
+  - "[Ad] [Click here] to open the webstore for more information."
 ad_showitem_inventories:
-  - "[Ad] In addition to /showitem, VIPs can use /showinv and /showender to show off the contents of their inventories/Ender Chests!"
-  - "[Tip] This upgrade also unlocks the %inv% and %ender% chat placeholders, which function the same as %item%."
+  - "[Ad] In addition to /showitem, VIPs can use /showinv and /showender to show off the contents of their inventories and Ender Chests!"
+  - "[Ad] [Click here] to open the webstore for more information."
+ad_showitem_vip_placeholders:
+  - "[Ad] Purchasing VIP unlocks the %inv% and %ender% chat placeholders, which function the same as %item%."
+  - "[Ad] [Click here] to open the webstore for more information."
