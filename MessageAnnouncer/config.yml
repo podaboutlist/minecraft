@@ -54,16 +54,16 @@ interval_announcement_list:
   - info_shopkeepers_wtc
   - info_shopkeepers_kit
   - info_showitem_placeholders
-  - ad_buy
-  - ad_blocklocker_vip_group
-  - ad_essentials_crafting_commands
-  - ad_chat_format
-  - ad_chat_rgb
-  - ad_rgb_nicknames
-  - ad_command_condense
-  - ad_marriage
-  - ad_shopkeeper_limit
-  - ad_showitem_inventories
+  # - ad_buy
+  # - ad_blocklocker_vip_group
+  # - ad_essentials_crafting_commands
+  # - ad_chat_format
+  # - ad_chat_rgb
+  # - ad_rgb_nicknames
+  # - ad_command_condense
+  # - ad_marriage
+  # - ad_shopkeeper_limit
+  # - ad_showitem_inventories
 announcements:
   command_rtp:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"No hostile mobs spawn within the ","color":"#FBF1C7"},{"text":"Homestead","color":"#D3869B"},{"text":". If you want to fight some creeps, use ","color":"#FBF1C7"},{"text":"/rtp","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/rtp"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
@@ -73,7 +73,7 @@ announcements:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Browse the list of public warp locations with ","color":"#FBF1C7"},{"text":"/warps","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_createwarp:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Create your own public warps with ","color":"#FBF1C7"},{"text":"/createwarp <warp name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/createwarp <warp name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":", then edit warps you''ve created with the ","color":"#FBF1C7"},{"text":"/warps","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/warps"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" GUI!","color":"#FBF1C7"}]'
-    - ''  #TODO: ADD AD
+    # - ''  #TODO: ADD AD
   command_namecolor:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Customize the color of your username in chat with the ","color":"#FBF1C7"},{"text":"/namecolor","color":"#D3869B","clickEvent":{"action":"suggest_command","value":"/namecolor"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" GUI!","color":"#FBF1C7"}]'
   command_co_inspect:
@@ -90,12 +90,12 @@ announcements:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"You can send mail to offline players with ","color":"#FBF1C7"},{"text":"/mail send <user> <text>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail send <user> <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". Check your inbox with ","color":"#FBF1C7"},{"text":"/mail","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
   command_sethome:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Set homes (private teleport points) with ","color":"#FBF1C7"},{"text":"/sethome <name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sethome <name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"! TP back to them with ","color":"#FBF1C7"},{"text":"/home <name>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/home <name>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
-    - ''  #TODO: ADD AD
+    # - ''  #TODO: ADD AD
   command_blocklocker_setline:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Allow other players to access your private chests with ","color":"#FBF1C7"},{"text":"/bl <2/3/4> <user>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mail send <user> <text>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":". (''","color":"#FBF1C7"},{"text":"<2/3/4>","color":"#FABD2F"},{"text":"'' specifies which line of the sign to modify.)","color":"#FBF1C7"}]'
   command_sit:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Sit down with ","color":"#FBF1C7"},{"text":"/sit","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sit"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
-    - ''  #TODO: ADD AD
+    # - ''  #TODO: ADD AD
   command_sit_toggle:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"If you don''t want to sit down automatically, use ","color":"#FBF1C7"},{"text":"/sit toggle","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/sit toggle"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" to disable the feature.","color":"#FBF1C7"}]'
   command_mcmmo_mcrank:
@@ -105,11 +105,11 @@ announcements:
   command_mcmmo_mcability:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"The ","color":"#FBF1C7"},{"text":"/mcability","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/mctop"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" command toggles the ","color":"#FBF1C7"},{"text":"automatic activation","color":"#FABD2F"},{"text":" of McMMO abilities.","color":"#FBF1C7"}]'
   command_mcmmo_mcscoreboard:
-    - ''
-    - ''
+    - ""
+    - ""
   command_showitem_show:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Show off the item in your hand to nearby players with ","color":"#FBF1C7"},{"text":"/showitem","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/showitem"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":" (or ","color":"#FBF1C7"},{"text":"/show","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/show"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":")!","color":"#FBF1C7"}]'
-    - ''  #TODO: ADD AD
+    # - ''  #TODO: ADD AD
   command_showitem_show_player:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Show items to specific players with ","color":"#FBF1C7"},{"text":"/showitem <user>","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"/showitem <user>"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to try this command yourself!","italic":true,"color":"#FABD2F"}]}},{"text":".","color":"#FBF1C7"}]'
   info_click_tip_commands:
@@ -138,7 +138,7 @@ announcements:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Set protected doors to ","color":"#FBF1C7"},{"text":"auto-close","color":"#FABD2F"},{"text":" after 1-9 seconds by adding ","color":"#FBF1C7"},{"text":"[Timer:<1-9>]","color":"#FABD2F"},{"text":" to the protection sign.","color":"#FBF1C7"}]'
   info_emojichat:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Most default Discord ","color":"#FBF1C7"},{"text":":emoji:","color":"#FABD2F"},{"text":" are available in chat! Try ","color":"#FBF1C7"},{"text":":tada:","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":":tada:"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this emoji!","italic":true,"color":"#FABD2F"}]}},{"text":" or ","color":"#FBF1C7"},{"text":":thumbsup:","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":":thumbsup:"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this emoji!","italic":true,"color":"#FABD2F"}]}},{"text":"!","color":"#FBF1C7"}]'
-    - ''  #TODO: ADD AD
+    - "" #TODO: ADD AD
   info_hiddenlorax:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"A hidden ","color":"#FBF1C7"},{"text":"Lorax","color":"#FABD2F"},{"text":" will automatically replant the ","color":"#FBF1C7"},{"text":"saplings","color":"#FABD2F"},{"text":" that drop when you ","color":"#FBF1C7"},{"text":"chop down trees","color":"#FABD2F"},{"text":"...","color":"#FBF1C7"}]'
   info_mcmmo_concept:
@@ -164,22 +164,22 @@ announcements:
   info_showitem_placeholders:
     - '[{"text":"[","bold":true,"color":"#458588"},{"text":"Tip","color":"#FE8019"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use the placeholders ","color":"#FBF1C7"},{"text":"%item%","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"%item%"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this placeholder!","italic":true,"color":"#FABD2F"}]}},{"text":" and ","color":"#FBF1C7"},{"text":"%itemoffhand%","color":"#FABD2F","clickEvent":{"action":"suggest_command","value":"%itemoffhand%"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to insert this placeholder!","italic":true,"color":"#FABD2F"}]}},{"text":" in chat messages to ","color":"#FBF1C7"},{"text":"show the item","color":"#FABD2F"},{"text":" in your hand/offhand!","color":"#FBF1C7"}]'
   ad_buy:
-    - ''
+    - ""
   ad_blocklocker_vip_group:
-    - ''
+    - ""
   ad_essentials_crafting_commands:
-    - ''
+    - ""
   ad_chat_format:
-    - ''
+    - ""
   ad_chat_rgb:
-    - ''
+    - ""
   ad_rgb_nicknames:
-    - ''
+    - ""
   ad_command_condense:
-    - ''
+    - ""
   ad_marriage:
-    - ''
+    - ""
   ad_shopkeeper_limit:
-    - ''
+    - ""
   ad_showitem_inventories:
-    - ''
+    - ""
