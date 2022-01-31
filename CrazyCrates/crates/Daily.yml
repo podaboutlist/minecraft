@@ -1,0 +1,1047 @@
+Crate:
+  # Type of crate, one of
+  #   - CSGO
+  #   - QuadCrate
+  #   - QuickCrate
+  #   - Roulette
+  #   - CrateOnTheGo
+  #   - FireCracker
+  #   - Wonder
+  #   - Wheel
+  #   - War
+  #   - Cosmic (This requires additional info to work)
+  CrateType: QuickCrate
+  # Name of the Inventory if a GUI crate.
+  CrateName: '&4D&ca&6i&el&2y&r &aC&br&3a&9t&de&r      &8podaboutli.st'
+  #The name of the inventory that will be in the preview GUI.
+  Preview-Name: '&4D&ca&6i&el&2y&r &aC&br&3a&9t&de&r &l  &8(&orewards preview&8)&r'
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # If the crate shows in the /cc GUI.
+  # (If the crate type is QuickCrate/CrateOnTheGo/FireCracker then the Crate
+  # will not work. Quick Crate requires a Physical Crate.)
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 13
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: false
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%Prefix%&6&l%Player%&r &7is opening a &4D&ca&6i&el&2y&r &aC&br&3a&9t&de&7!'
+  # Item the crate is in the GUI
+  Item: 'CHEST'
+  # If the crate in the main /cc GUI is glowing or not.
+  Glowing: true
+  # Name of the item in the GUI.
+  Name: '&4D&ca&6i&el&2y&r &aC&br&3a&9t&de&r'
+  # The lore of the item in the GUI.
+  Lore:
+    - '&7&oThe &4&oD&c&oa&6&oi&e&ol&2&oy&r&o &a&oC&b&or&3&oa&9&ot&d&oe&7&o is available for all players.'
+    - '&7&oUse &b/daily&7&o once every 24 hours to claim a key.'
+    - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  Preview:
+    #Turn on and off the preview for this crate.
+    Toggle: true
+    #How many lines the previewChest should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'GRAY_STAINED_GLASS_PANE'
+  PhysicalKey:
+    # Name of the Key.
+    Name: '&eDaily Crate Key'
+    # Lore of the Key.
+    Lore:
+      - '&7&oUsed to open the &4&oD&c&oa&6&oi&e&ol&2&oy&r&o &a&oC&b&or&3&oa&9&ot&d&oe&7&o.'
+      - '&7&oYou can find the crate at &b/warp crates&7&o.'
+      - '&7&oUse &b/daily&7&o once a day for another key!'
+    # The item the key is.
+    Item: 'TRIPWIRE_HOOK'
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+  Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The message that will be displayed.
+    Message:
+      - '#ffba01D#fec300a#ffcf00i#fed901l#ffdf01y&r #ffdf01C#fed901r#ffcf00a#fec300t#ffba01e'
+  # All the prizes that can be gotten in the Crate.
+  Prizes:
+    1:
+      # Name of the item shown by the crate.
+      DisplayName: '&eElytra'
+      # Item that is shown by the crate.
+      DisplayItem: 'ELYTRA'
+      # The amount that is displayed.
+      DisplayAmount: 1
+      # Lore will be shown in rewards GUI.
+      Lore: []
+      # Adds enchantments to the display item.
+      DisplayEnchantments: []
+      # The max range that the chance will go though.
+      MaxRange: 100
+      # Chance of that item getting picked. It would be 40/100 chance because
+      # MaxRange is 100.
+      Chance: 1
+      # Firework when it is won.
+      Firework: true
+      # Toggle if the item has a glowing effect but doesn't have an enchantment
+      # on it.
+      Glowing: false
+      # Set the item to 397:3 and then add the players name for this to take
+      # effect.
+      Player: ''
+      # Adds the unbreaking NBT tag to the display item to allow it to have
+      # custom textures.
+      Unbreakable: false
+      # When set to true, tags like Armor, Unbreakable and other tags are hidden
+      # and not visible to the user.
+      HideItemFlags: false
+      # Items that the player wins if this prize is picked. (If you wish not to
+      # give an Item in the prize just delete the Items Section)
+      # Items: Options
+      # Item: <Item Name> - The item you wish to give.
+      # Amount: <Number> - Choose how many of the item you get.
+      # Name: <Name> - The display name that goes on the item.
+      # Lore: <Line 1>,<Line 2>,<Line 3>,<Line 4> - The lore that will go under
+      #       the enchantments. Split lines with a ','
+      # Unbreakable-Item: <True/False> - Will add the Unbreaking NBT tag to the
+      #                   item to allow custom textured items to be gained
+      #                   through the envoys.
+      # <Enchantment>: <Level> - Choose the enchantment you want to add to the
+      #                item. You can use the in-game names of the enchantment
+      #                if you want. Replace the spaces in the name with "_".
+      Items:
+        - 'Item:ELYTRA, Amount:1'
+      # Commands are the commands that are run when this prize is won. (If you
+      # wish not to use a CMD in the prize just delete the Commands Section)
+      # You can use %Player% to get the player that won the prize.
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Elytra","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.elytra true 3d'
+      # Messages: option allows you to send players messages and not have to
+      #           pm them with commands.
+      # If you do not wish to have players get messaged that they won this
+      # prize then just remove the Messages: option.
+      Messages: []
+      # This allows for one time winnable prizes. If a player has one of the
+      # permissions then they will not be able to win it.
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.elytra'
+      # This allows users who have won the same prize before to get alternative
+      # prizes. They must of a BlackListed-Permission to get a alternative
+      # prize.
+      Alternative-Prize:
+        # Toggle if the prize will use alternative prizes for the blacklisted
+        # permission.
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    2:
+      DisplayName: '&eNether Star'
+      DisplayItem: 'NETHER_STAR'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:NETHER_STAR, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Nether Star","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.nether_star true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.elytra'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    3:
+      DisplayName: '&fShulker Shell'
+      DisplayItem: 'SHULKER_SHELL'
+      DisplayAmount: 2
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:SHULKER_SHELL, Amount:2'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Two Shulker Shells","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.shulker_shell true 3d'
+      Messages: []
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.shulker_shell'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    4:
+      DisplayName: '&fBell'
+      DisplayItem: 'BELL'
+      DisplayAmount: 8
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:BELL, Amount:8'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Eight Bells","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.elytra true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.elytra'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    5:
+      DisplayName: '&dEnchanted Golden Apple'
+      DisplayItem: 'ENCHANTED_GOLDEN_APPLE'
+      DisplayAmount: 8
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:ENCHANTED_GOLDEN_APPLE, Amount:8'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Eight Enchanted Golden Apples","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.elytra true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.elytra'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    6:
+      DisplayName: '&fSponge'
+      DisplayItem: 'SPONGE'
+      DisplayAmount: 64
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:SPONGE, Amount:64'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"64 Sponge","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.elytra true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.elytra'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    7:
+      DisplayName: '&bEnchanted Book'
+      DisplayItem: 'ENCHANTED_BOOK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'MENDING:1'
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items: []
+      Commands:
+        - 'minecraft:give %Player% minecraft:enchanted_book{Enchantments:[{id:"minecraft:mending",lvl:1}]} 1'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Enchanted Mending Book","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    8:
+      DisplayName: '&bEnchanted Book'
+      DisplayItem: 'ENCHANTED_BOOK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'DURABILITY:3'
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items: []
+      Commands:
+        - 'minecraft:give %Player% minecraft:enchanted_book{Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Enchanted Unbreaking III Book","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    9:
+      DisplayName: '&bEnchanted Book'
+      DisplayItem: 'ENCHANTED_BOOK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'DIG_SPEED:5'
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items: []
+      Commands:
+        - 'minecraft:give %Player% minecraft:enchanted_book{Enchantments:[{id:"minecraft:efficiency",lvl:5}]} 1'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Enchanted Efficiency V Book","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    10:
+      DisplayName: '&bEnchanted Book'
+      DisplayItem: 'ENCHANTED_BOOK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'LOOT_BONUS_BLOCKS:3'
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items: []
+      Commands:
+        - 'minecraft:give %Player% minecraft:enchanted_book{Enchantments:[{id:"minecraft:fortune",lvl:3}]} 1'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Enchanted Fortune III Book","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    11:
+      DisplayName: '&bEnchanted Book'
+      DisplayItem: 'ENCHANTED_BOOK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'SILK_TOUCH:1'
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+      Commands:
+        - 'minecraft:give %Player% minecraft:enchanted_book{Enchantments:[{id:"minecraft:silk_touch",lvl:1}]} 1'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Enchanted Silk Touch Book","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    12:
+      DisplayName: '&fBlock of Netherite'
+      DisplayItem: 'NETHERITE_BLOCK'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:NETHERITE_BLOCK, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Block of Netherite","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.netherite_block true 14d'
+      Messages: []
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.netherite_block'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    13:
+      DisplayName: '&FBlock of Diamond'
+      DisplayItem: 'DIAMOND_BLOCK'
+      DisplayAmount: 4
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:DIAMOND_BLOCK, Amount:4'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"four Diamond Blocks","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.diamond_block true 7d'
+      Messages: []
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.diamond_block'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    14:
+      DisplayName: '&fNether Quartz Ore'
+      DisplayItem: 'NETHER_QUARTZ_ORE'
+      DisplayAmount: 64
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:NETHER_QUARTZ_ORE, Amount:64'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"64 Nether Quartz Ore","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    15:
+      DisplayName: '&FBucket of Axolotl'
+      DisplayItem: 'AXOLOTL_BUCKET'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:AXOLOTL_BUCKET, Amount:1'
+        - 'Item:NAME_TAG, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Bucket of Axolotl","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    16:
+      DisplayName: '&fBucket of Tropical Fish'
+      DisplayItem: 'TROPICAL_FISH_BUCKET'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:TROPICAL_FISH_BUCKET, Amount:1'
+        - 'Item:NAME_TAG, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Bucket of Tropical Fish","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    17:
+      DisplayName: '&2Hal_01''s Whacking Stick'
+      DisplayItem: 'STICK'
+      DisplayAmount: 1
+      Lore:
+        - '&7&oFed up with the abuse he sustained on PAL SMP'
+        - '&7&oseason 01; Hal_01 took to PVP servers and'
+        - '&7&olearned the art of war...'
+      DisplayEnchantments:
+        - 'KNOCKBACK:10'
+      MaxRange: 1000
+      Chance: 1
+      Firework: true
+      Glowing: true
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:STICK, Amount:1, Lore:&7&oFed up with the abuse he sustained on PAL SMP,&7&oseason 01; Hal_01 took to PVP servers and,&7&olearned the art of war..., KNOCKBACK:10'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Hal''s Whacking Stick","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission set crazycrates.blacklist.daily.hals_whacking_stick true'
+      Messages:
+        - "&cHal_01's Whacking Stick is a rare item! You won't win it from a crate again, so keep it safe..."
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: true
+        Messages:
+          - '&cYou already won Hal''s Whacking Stick before, so here''s a treat instead...'
+        Commands: [ ]
+        Items:
+          - 'Item:NETHERITE_INGOT, Amount:1'
+    18:
+      DisplayName: '&fFour Stacks of Gunpowder'
+      DisplayItem: 'GUNPOWDER'
+      DisplayAmount: 256
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:GUNPOWDER, Amount:64'
+        - 'Item:GUNPOWDER, Amount:64'
+        - 'Item:GUNPOWDER, Amount:64'
+        - 'Item:GUNPOWDER, Amount:64'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"four stacks of Gunpowder","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission settemp crazycrates.blacklist.daily.gunpowder true 3d'
+      Messages: []
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.gunpowder'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    19:
+      DisplayName: '&eBuild-a-Wither'
+      DisplayItem: 'WITHER_SKELETON_SKULL'
+      DisplayAmount: 3
+      Lore:
+        - '&7&o3x &e&oWither Skeleton Skulls'
+        - '&7&o4x &b&oSoul Sand'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:WITHER_SKELETON_SKULL, Amount:3'
+        - 'Item:SOUL_SAND, Amount:4'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Wither Spawning Kit","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.gunpowder true 3d'
+      Messages: []
+      BlackListed-Permissions:
+        # - 'crazycrates.blacklist.daily.gunpowder'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    20:
+      DisplayName: '&fGolden Carrot'
+      DisplayItem: 'GOLDEN_CARROT'
+      DisplayAmount: 24
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:GOLDEN_CARROT, Amount:24'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"24 Golden Carrots","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    21:
+      DisplayName: '&fGlistering Melon Slice'
+      DisplayItem: 'GLISTERING_MELON_SLICE'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:GLISTERING_MELON_SLICE, Amount:24'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"24 Glistering Melon Slices","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    22:
+      DisplayName: '&eTwo of Every Flower'
+      DisplayItem: 'ALLIUM'
+      DisplayAmount: 2
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:DANDELION, Amount:2'
+        - 'Item:POPPY, Amount:2'
+        - 'Item:BLUE_ORCHID, Amount:2'
+        - 'Item:ALLIUM, Amount:2'
+        - 'Item:AZURE_BLUET, Amount:2'
+        - 'Item:RED_TULIP, Amount:2'
+        - 'Item:ORANGE_TULIP, Amount:2'
+        - 'Item:WHITE_TUILP, Amount:2'
+        - 'Item:PINK_TULIP, Amount:2'
+        - 'Item:OXEYE_DAISY, Amount:2'
+        - 'Item:CORNFLOWER, Amount:2'
+        - 'Item:LILY_OF_THE_VALLEY, Amount:2'
+        - 'Item:WITHER_ROSE, Amount:2'
+        - 'Item:SPORE_BLOSSOM, Amount:2'
+        - 'Item:SUNFLOWER, Amount:2'
+        - 'Item:LILAC, Amount:2'
+        - 'Item:ROSE_BUSH, Amount:2'
+        - 'Item:PEONY, Amount:2'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Two of Every Flower","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    23:
+      DisplayName: '&eTotem of Undying'
+      DisplayItem: 'TOTEM_OF_UNDYING'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:TOTEM_OF_UNDYING, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Totem of Undying","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    24:
+      DisplayName: '&eFull Enchanting Table Setup'
+      DisplayItem: 'ENCHANTING_TABLE'
+      DisplayAmount: 1
+      Lore:
+        - '&7&o1x &e&oEnchanting Table'
+        - '&7&o15x &b&oBookshelves'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:ENCHANTING_TABLE, Amount:1'
+        - 'Item:BOOKSHELF, Amount:15'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"Full Enchanting Table Setup","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    25:
+      DisplayName: '&eThe Ultimate Flint and Steel'
+      DisplayItem: 'FLINT_AND_STEEL'
+      DisplayAmount: 1
+      Lore: []
+      DisplayEnchantments:
+        - 'MENDING:1'
+        - 'DURABILITY:3'
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: true
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:FLINT_AND_STEEL, Amount:1, Name:&eThe Ultimate Flint and Steel, MENDING:1, DURABILITY:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"The Ultimate Flint and Steel","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        - 'lp user %Player% permission set crazycrates.blacklist.daily.ultimate_flint_steel true'
+      Messages:
+        - "&cHal_01's Whacking Stick is a rare item! You won't win it from a crate again, so keep it safe..."
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.daily.ultimate_flint_steel'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    26:
+      DisplayName: '&e30 Enchanting Levels'
+      DisplayItem: 'EXPERIENCE_BOTTLE'
+      DisplayAmount: 1
+      Lore:
+        - '&7&oInstantly gain 30 enchanting levels.'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items: []
+      Commands:
+        - 'essentials:xp give %Player% 30l'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"30 Enchanting Levels","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission set crazycrates.blacklist.daily.ultimate_flint_steel true'
+      Messages: []
+      BlackListed-Permissions:
+        # - 'crazycrates.blacklist.daily.ultimate_flint_steel'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    27:
+      DisplayName: '&eYour New Best Friend'
+      DisplayItem: 'CARROT_ON_A_STICK'
+      DisplayAmount: 1
+      Lore:
+        - '&7&oHe''s a very special pig.'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:CARROT_ON_A_STICK, Amount:1'
+        - 'Item:PIG_SPAWN_EGG, Amount:1'
+        - 'Item:SADDLE, Amount:1'
+        - 'Item:NAME_TAG, Amount:1'
+        - 'Item:LEAD, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won a ","color":"#8EC07C"},{"text":"New Best Friend!","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    28:
+      DisplayName: '&eSome Blocks for Nerds'
+      DisplayItem: 'RESPAWN_ANCHOR'
+      DisplayAmount: 1
+      Lore:
+        - '&7&oidk i''ve never used one of these lol'
+        - '&7&o1x &5Respawn Anchor'
+        - '&7&o1x &5Lodestone'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:RESPAWN_ANCHOR, Amount:1'
+        - 'Item:LODESTONE, Amount:1'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Some Blocks for Nerds","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    29:
+      DisplayName: '&eA Cupcake and a Candy Bar'
+      DisplayItem: 'CAKE'
+      DisplayAmount: 1
+      Lore:
+        - '&7&o1x &eCake'
+        - '&7&o16x &eCookie'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:CAKE, Amount:1'
+        - 'Item:COOKIE, Amount:16'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"A Cupcake and a Candy Bar","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    30:
+      DisplayName: '&eA Full Inventory of Torches'
+      DisplayItem: 'TORCH'
+      DisplayAmount: 64
+      Lore:
+        - '&7&o2,304x &eTorch'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+        - 'Item:TORCH, Amount:64'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won an ","color":"#8EC07C"},{"text":"Full Inventory of Torches","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    31:
+      DisplayName: '&bEnd Crystal'
+      DisplayItem: 'END_CRYSTAL'
+      DisplayAmount: 4
+      Lore:
+        - '&7&oRespawn the End Dragon for another fight!'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:END_CRYSTAL, Amount:4'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Four End Crystals","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
+    32:
+      DisplayName: '&eHoney ''n'' Slime'
+      DisplayItem: 'HONEY_BLOCK'
+      DisplayAmount: 64
+      Lore:
+        - '&7&o64x &e&oHoney Block'
+        - '&7&o64x &a&oSlime Block'
+      DisplayEnchantments: []
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: false
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+        - 'Item:HONEY_BLOCK, Amount:64'
+        - 'Item:SLIME_BLOCK, Amount:64'
+      Commands:
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"%Player%","color":"#D3869B"},{"text":" just won ","color":"#8EC07C"},{"text":"Honey ''n'' Slime","color":"#D3869B"},{"text":" from the daily crate!","color":"#8EC07C"}]'
+        - 'tellraw @a ["",{"text":"[","bold":true,"color":"#458588"},{"text":"Crates","color":"#FABD2F"},{"text":"]","bold":true,"color":"#458588"}," ",{"text":"Use ","color":"#8EC07C"},{"text":"/daily","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" and ","color":"#8EC07C"},{"text":"/warp crates","color":"#D3869B","clickEvent":{"action":"run_command","value":"/daily"},"hoverEvent":{"action":"show_text","contents":[]}},{"text":" to unlock your own!","color":"#8EC07C"}]'
+        # - 'lp user %Player% permission settemp crazycrates.blacklist.daily.mending_book true 3d'
+      Messages: []
+      BlackListed-Permissions: []
+        # - 'crazycrates.blacklist.daily.mending_book'
+      Alternative-Prize:
+        Toggle: false
+        Messages: [ ]
+        Commands: [ ]
+        Items: [ ]
