@@ -1,0 +1,45 @@
+name: "&6Patrick's Awesome Shovel"
+lore:
+  - ""
+  - "&d&oYou take poison damage while holding it"
+  - "&e&o   - Patrick"
+material: WOODEN_SHOVEL
+glow: true
+glowEffect: true
+cancel-item-drop: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: -1
+unbreakable: true
+storeItemInfos: true
+enchantments:
+  eff:
+    enchantment: efficiency
+    level: 5
+activators:
+  equip:
+    activator: PLAYER_SELECT_THE_EI
+    displayName: "&ePoison player while equipped"
+    usageRestore: 0
+    cooldown: 0
+    needConfirmBeforeUse: false
+    commands:
+      - effect give %player% minecraft:poison 1000000
+    # Only works if the item is in the main/offhand
+    detailedSlots:
+      - "-1"
+      - "40"
+  unequip:
+    activator: PLAYER_DESELECT_THE_EI
+    displayName: "&eRemove poison effect when equipped"
+    usageRestore: 0
+    cooldown: 0
+    needConfirmBeforeUse: false
+    commands:
+      - effect clear %player% minecraft:poison
+    # Only works if the item is in the main/offhand
+    detailedSlots:
+      - "-1"
+      - "40"
+config_3_5: "true"
